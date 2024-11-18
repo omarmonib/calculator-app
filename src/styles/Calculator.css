@@ -1,0 +1,109 @@
+.calculator {
+  background: var(--bg-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.display {
+  background: var(--display-bg);
+  color: var(--display-color);
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  min-height: 50px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background: var(--btn-bg);
+  border: none;
+  color: var(--btn-color);
+  padding: 15px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--btn-hover-bg);
+}
+
+button:active {
+  background: var(--btn-active-bg);
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: none;
+}
+
+.history {
+  margin-top: 20px;
+  background: #f4f4f421;
+  padding: 10px;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  color: #EEE;
+}
+
+.history h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history li {
+  font-size: 1em;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* الوضع الليلي */
+:root {
+  --bg-color: #2c3e50;
+  --display-bg: #34495e;
+  --display-color: #ecf0f1;
+  --btn-bg: #2980b9;
+  --btn-color: #fff;
+  --btn-hover-bg: #3498db;
+  --btn-active-bg: #1c6a92;
+}
+
+.dark {
+  --bg-color: #ecf0f1;
+  --display-bg: #bdc3c7;
+  --display-color: #2c3e50;
+  --btn-bg: #95a5a6;
+  --btn-color: #2c3e50;
+  --btn-hover-bg: #7f8c8d;
+  --btn-active-bg: #5c6c6c;
+}
